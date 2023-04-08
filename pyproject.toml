@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kanjistory-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "kanjistory_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^2.2.3"
+flask-smorest = "^0.41.0"
+sqlalchemy = "^2.0.9"
+python-dotenv = "^1.0.0"
+flask-smorest-sqla = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
